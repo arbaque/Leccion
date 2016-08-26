@@ -11,6 +11,8 @@ require_once '../Colector/programa.php';
 $alm = new programa();
 $model = new programaColector();
 
+echo '<br /><a href="Admin.php">Menu Principal</a>';
+
 ?>
 
 <!DOCTYPE html>

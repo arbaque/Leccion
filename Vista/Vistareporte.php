@@ -11,6 +11,8 @@ require_once '../Colector/reporte.php';
 $alm = new reporte();
 $model = new reportecolector();
 
+echo '<br /><a href="Admin.php">Menu Principal</a>';
+
 ?>
 
 <!DOCTYPE html>

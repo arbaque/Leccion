@@ -2,16 +2,26 @@
 <?php
 // crear las cookies
 session_start();
-
-
-
+if (isset($_SESSION['usuario'])){
 $nombre = $_POST['nombre'];
 $clave = $_POST['clave'];
+}
+else{
 
-echo 'Bienvenido a la página '.$nombre;
+
+
+}
+
+$nombre = $_SESSION['usuario'];
+$clave = "";
+//echo 'Bienvenido a la página '.$nombre;
  echo '<br /><a href="destruirsession.php">Cerrar Session</a>';
 
-$_SESSION['usuario']  = $nombre;
+//$_SESSION['usuario']  = $nombre;
+
+echo 'Bienvenido a la página '.$_SESSION['usuario'];
+ echo '<br /><a href="destruirsession.php">Cerrar Session</a>';
+
 // Funciona si la cookie de sesión fue aceptada
 echo '<br /><a href="login.php">Volver</a>';
 

@@ -11,7 +11,7 @@ $alm = new becario();
 $alm->setid($_GET['id']);
 $model = new becarioColector();
 $model->deletebecario($alm);
-echo '<br /><a href="Vistademo.php">Volver</a>';
+echo '<br /><a href="Vistabecario.php">Volver</a>';
 //header("Location:Vistademo.php");
 
 ?>

@@ -11,6 +11,8 @@ require_once '../Colector/becario.php';
 $alm = new becario();
 $model = new becarioColector();
 
+echo '<br /><a href="Admin.php">Menu Principal</a>';
+
 ?>
 
 <!DOCTYPE html>
